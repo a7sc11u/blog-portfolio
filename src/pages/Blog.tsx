@@ -1,4 +1,5 @@
 import { styled } from 'goober'
+import { StyledArticle } from '../components/Article'
 import SEO from '../components/Seo'
 import { Link, Prelude, Title } from '../components/Text'
 import posts from './posts'
@@ -24,22 +25,22 @@ const TitleLink = styled(Link)`
 
 export default () => (
   <>
-    <SEO
-      title='Blog'
-      description='Posts about my work and thoughts.'
-    />
-    <Title>Blog</Title>
-    <Prelude>
-      My thoughts in a semi-raw form, a lot of these posts contain what goes around
-      in my mind throughout a day.
-    </Prelude>
-    <Block>
-      {posts.map((post) => (
-        <Summary>
-          <TitleLink href={post.path}>{post.title}</TitleLink>
-          <Prelude>{post.description}</Prelude>
-        </Summary>
-      ))}
-    </Block>
+    <SEO title="Blog" description="Posts about my work and thoughts." />
+
+    <StyledArticle>
+      <Title>Blog</Title>
+      <Prelude>
+        My thoughts in a semi-raw form, a lot of these posts contain what goes
+        around in my mind throughout a day.
+      </Prelude>
+      <Block>
+        {posts.map((post) => (
+          <Summary>
+            <TitleLink href={post.path}>{post.title}</TitleLink>
+            <Prelude>{post.description}</Prelude>
+          </Summary>
+        ))}
+      </Block>
+    </StyledArticle>
   </>
 )

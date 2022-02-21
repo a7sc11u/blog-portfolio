@@ -9,23 +9,24 @@ import ControlledInputs, {
   documentProps as inputsDocumentProps,
 } from './controlled-inputs/index.mdx'
 
+import { MDXArticle } from '../../components/Article'
+import { mdxComponents } from '../../components/MdxComponents'
+
+const preStylesheet =
+  'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/ir-black.min.css'
+
 export default [
   {
     ...inputsDocumentProps,
     Component: () => {
-      useLink({
-        rel: 'stylesheet',
-        href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css'
-      })
-
       return (
-        <>
+        <MDXArticle>
           <SEO
             title={inputsDocumentProps.title}
             description={inputsDocumentProps.description}
           />
-          <ControlledInputs />
-        </>
+          <ControlledInputs components={mdxComponents} />
+        </MDXArticle>
       )
     },
     path: '/blog' + inputsDocumentProps.path,
@@ -33,19 +34,14 @@ export default [
   {
     ...vdomDocumentProps,
     Component: () => {
-      useLink({
-        rel: 'stylesheet',
-        href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css'
-      })
-
       return (
-        <>
+        <MDXArticle>
           <SEO
             title={vdomDocumentProps.title}
             description={vdomDocumentProps.description}
           />
-          <VdomOptimizations />
-        </>
+          <VdomOptimizations components={mdxComponents} />
+        </MDXArticle>
       )
     },
     path: '/blog' + vdomDocumentProps.path,

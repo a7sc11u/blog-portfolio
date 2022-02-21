@@ -1,11 +1,12 @@
 import { useRef } from 'preact/hooks'
+import { DisplayMono } from '../../../components/Text'
 
 export const RerenderTracker = (props) => {
   const rerenders = useRef(-1)
   rerenders.current++
   return (
-    <p style={{ fontWeight: 600, textDecoration: 'underline' }}>
+    <DisplayMono>
       {props.name} rerenders: {rerenders.current}
-    </p>
+    </DisplayMono>
   )
 }

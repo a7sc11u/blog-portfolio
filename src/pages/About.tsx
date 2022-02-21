@@ -4,6 +4,7 @@ import SEO from '../components/Seo'
 import { StyledArticle } from '../components/Article'
 
 const Hero = styled('div')`
+  background: white;
   width: 100%;
 `
 

@@ -1,56 +1,52 @@
 import { styled } from 'goober'
 import { VNode } from 'preact'
+
 import Footer from './Footer'
-import { Link } from './Text'
+import Header from './Header'
 
 const Wrapper = styled('div')`
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 42rem;
-  padding: 2rem 1.3125rem;
-
-  /* Sticky footer */
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-`
-
-const Main = styled('main')`
-  /* Sticky footer */
   flex: 1;
-`
-
-const Nav = styled('nav')`
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 100%;
+  max-width: ${(p) => p.theme.space.layout};
+  padding-left: ${(p) => p.theme.space.gutter};
+  padding-right: ${(p) => p.theme.space.gutter};
+  padding-top: ${(p) => p.theme.space.gutter};
+  padding-bottom: ${(p) => p.theme.space.gutter};
   margin-left: auto;
   margin-right: auto;
+  ${(p) => p.theme.media.md} {
+    padding-top: ${(p) => p.theme.space.main_margin};
+    padding-bottom: ${(p) => p.theme.space.main_margin};
+    grid-template-columns: ${(p) => p.theme.space.sidenav} 1fr;
+  }
+  ${(p) => p.theme.media.lg} {
+    padding-right: 10vw;
+  }
+
+  & > footer {
+    grid-column-start: 2;
+  }
+`
+
+const Main = styled('div')`
   display: flex;
   justify-content: center;
-  gap: 3rem;
-  padding: 0.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 1rem;
 `
-
-const Header = () => (
-  <header>
-    <Nav>
-      <Link href="/">Home</Link>
-      <Link href="/blog">Blog</Link>
-    </Nav>
-  </header>
-)
 
 export type LayoutProps = {
   children?: VNode
 }
 
 const Layout = (props: LayoutProps) => (
-  <Wrapper>
-    <Header />
-    <Main>{props.children}</Main>
+  <>
+    <Wrapper>
+      <Header />
+      <Main>{props.children}</Main>
+    </Wrapper>
     <Footer />
-  </Wrapper>
+  </>
 )
 
 export default Layout
