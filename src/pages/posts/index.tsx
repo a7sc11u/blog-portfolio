@@ -12,9 +12,6 @@ import ControlledInputs, {
 import { MDXArticle } from '../../components/Article'
 import { mdxComponents } from '../../components/MdxComponents'
 
-const preStylesheet =
-  'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/ir-black.min.css'
-
 export default [
   {
     ...inputsDocumentProps,

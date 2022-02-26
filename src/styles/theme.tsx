@@ -34,7 +34,7 @@ export const theme = {
     prose: '42rem',
     layout: '124rem',
     gutter: '4.20vw',
-    main_margin: '6.4vw',
+    main_margin: '4.2vmax',
   },
 
   fontSizes: {

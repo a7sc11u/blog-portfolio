@@ -5,6 +5,7 @@ const Nav = styled('nav')`
   display: flex;
   flex-direction: column;
   position: sticky;
+  align-items: flex-start;
   top: ${(p) => p.theme.space[5]};
 `
 
@@ -51,7 +52,7 @@ const Header = () => (
       <NavSection>
         <LinkMono href="/">Home</LinkMono>
         <LinkMono href="/blog">Blog</LinkMono>
-        <LinkMono href="/blog">About</LinkMono>
+        <LinkMono href="/about">About</LinkMono>
         <LinkMono href="mailto:decroockjovi@gmail.com">Contact</LinkMono>
       </NavSection>
       <NavSection>

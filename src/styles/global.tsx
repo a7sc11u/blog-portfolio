@@ -38,7 +38,8 @@ export const GlobalStyles = createGlobalStyles`
     font-weight: 700;
     color: inherit;
     &:hover,&:focus {
-        color: ${(p) => p.theme.colors.accent};
+      text-decoration:none;
+      color: ${(p) => p.theme.colors.accent};
     }
   }
 
