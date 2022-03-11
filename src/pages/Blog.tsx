@@ -17,8 +17,9 @@ export default () => (
 
       {posts.map((post) => (
         <article>
-          <h2 href={post.path}>{post.title}</h2>
+          <h2>{post.title}</h2>
           <p>{post.description}</p>
+          <a href={post.path}>{post.title}</a>
         </article>
       ))}
     </StyledArticle>

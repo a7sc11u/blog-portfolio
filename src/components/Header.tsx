@@ -12,16 +12,21 @@ const Nav = styled('nav')`
 const JoviLink = styled('a')`
   font-family: ${(p) => p.theme.fonts.condenced};
   text-decoration: none;
-  text-transform: uppercase;
   line-height: 1.2;
+  text-transform: uppercase;
+
   > .name {
     display: block;
     color: ${(p) => p.theme.colors.accent};
-    font-size: ${(p) => p.theme.fontSizes[3]};
+    font-size: ${(p) => p.theme.fontSizes[5]};
+    font-weight: 700;
   }
   > .title {
     display: block;
+    font-family: ${(p) => p.theme.fonts.mono};
+    text-transform: uppercase;
     font-size: ${(p) => p.theme.fontSizes[0]};
+    font-weight: 400;
     color: ${(p) => p.theme.colors.uloContrast};
   }
   &:hover,

@@ -8,6 +8,7 @@ import About from './pages/About'
 import posts from './pages/posts'
 import NotFound from './pages/404'
 import Layout from './components/Layout'
+import './styles/fonts.css'
 
 import { GlobalStyles } from './styles/global'
 import { useTheme } from './styles/theme'

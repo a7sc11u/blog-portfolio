@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyles`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    font-feature-settings: "salt";
   }
 
   body {
@@ -13,7 +14,7 @@ export const GlobalStyles = createGlobalStyles`
     font-family: ${(p) => p.theme.fonts.sans};
     background-color: ${(p) => p.theme.colors.bg};
     color: ${(p) => p.theme.colors.loContrast};
-    line-height: 1.6;
+    line-height: 1.55;
     font-size: ${(p) => p.theme.fontSizes[1]};
 
     ${(p) => p.theme.media.sm} {

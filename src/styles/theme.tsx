@@ -52,10 +52,8 @@ export const theme = {
     700: '700',
   },
   fonts: {
-    sans: "'IBM Plex Sans', system-ui, sans-serif",
-    condenced:
-      "'Roboto Condensed', 'IBM Plex Sans Condensed', system-ui, sans-serif",
-    serif: "'IBM Plex Serif', serif",
+    sans: '"PeridotPE", system-ui, sans-serif',
+    condenced: '"PeridotPE-Narrow", system-ui, sans-serif',
     mono: "'IBM Plex Mono',monospace-ui, monospace",
   },
   media: {

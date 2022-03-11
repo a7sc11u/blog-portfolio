@@ -1,0 +1,17 @@
+
+pyftsubset  PeridotPE-Regular.woff2   --output-file="./dist/PeridotPE-Regular.woff2"   --flavor=woff2   --layout-features="salt,tnum"  --unicodes="U+0000-00FF, U+20AC, U+2122"
+ 
+pyftsubset  PeridotPE-Italic.woff2   --output-file="./dist/PeridotPE-Italic.woff2"   --flavor=woff2   --layout-features="salt,tnum"  --unicodes="U+0000-00FF, U+20AC, U+2122"
+ 
+pyftsubset  PeridotPE-Bold.woff2   --output-file="./dist/PeridotPE-Bold.woff2"   --flavor=woff2   --layout-features="salt,tnum"  --unicodes="U+0000-00FF, U+20AC, U+2122"
+ 
+pyftsubset  PeridotPE-NarrowBold.woff2   --output-file="./dist/PeridotPE-NarrowBold.woff2"   --flavor=woff2   --layout-features="salt,tnum"  --unicodes="U+0000-00FF, U+20AC, U+2122"
+ 
+pyftsubset  PeridotPE-NarrowRegular.woff2   --output-file="./dist/PeridotPE-NarrowRegular.woff2"   --flavor=woff2   --layout-features="salt,tnum"  --unicodes="U+0000-00FF, U+20AC, U+2122"
+ 
+pyftsubset  PeridotPE-NarrowBoldItalic.woff2   --output-file="./dist/PeridotPE-NarrowBoldItalic.woff2"   --flavor=woff2   --layout-features="salt,tnum"  --unicodes="U+0000-00FF, U+20AC, U+2122"
+ 
+pyftsubset  PeridotPE-NarrowItalic.woff2   --output-file="./dist/PeridotPE-NarrowItalic.woff2"   --flavor=woff2   --layout-features="salt,tnum"  --unicodes="U+0000-00FF, U+20AC, U+2122"
+ 
+pyftsubset  PeridotPE-BoldItalic.woff2   --output-file="./dist/PeridotPE-BoldItalic.woff2"   --flavor=woff2   --layout-features="salt,tnum"  --unicodes="U+0000-00FF, U+20AC, U+2122"
+ 

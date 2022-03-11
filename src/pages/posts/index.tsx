@@ -1,5 +1,6 @@
 import { useLink } from 'hoofd/preact'
 import SEO from '../../components/Seo'
+
 import VdomOptimizations, {
   // @ts-ignore
   documentProps as vdomDocumentProps,
